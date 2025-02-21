@@ -309,13 +309,13 @@ nav ul li a:hover {
 }
 /* 🔹 Fondo negro solo en la página de Edición Especial */
 .especial {
-    background: #000 !important; /* Negro puro */
+    background: #000 !important;
     color: white;
 }
 /* 🔹 Menú oscuro para Edición Especial */
 .especial .menu {
-    background: linear-gradient(90deg, #000, #111); /* Negro puro con un toque de gris oscuro */
-    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.5); /* Glow dorado premium */
+    background: linear-gradient(90deg, #000, #111);
+    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.5); 
 }
 
 /* 🔹 Texto y enlaces en dorado */
@@ -351,4 +351,20 @@ nav ul li a:hover {
 
 .especial .barra-busqueda button:hover {
     background: rgb(200, 170, 0);
+}
+/* 🔹 Texto dorado en la barra de búsqueda */
+.especial .barra-busqueda input {
+    color: gold; 
+    text-shadow: 0px 0px 5px rgba(255, 215, 0, 0.8);
+}
+
+/* 🔹 Placeholder también en dorado */
+.especial .barra-busqueda input::placeholder {
+    color: gold;
+    opacity: 0.8; 
+}
+.especial .logo h1 {
+    color: gold !important;
+    text-shadow: 0px 0px 15px rgba(255, 215, 0, 1) !important;
+    filter: drop-shadow(0px 0px 10px rgba(255, 215, 0, 0.8)) !important;
 }
