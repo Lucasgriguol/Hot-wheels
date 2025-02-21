@@ -1,13 +1,14 @@
 body {
     background: linear-gradient(90deg, #0077ff, #00ccff);
 }
-
 /* 🔹 Menú principal */
 .menu {
-    background: linear-gradient(90deg, #001f3f, #004080); /* Azul neón */
-    padding: 15px 0;
+    background: linear-gradient(90deg, #001f3f, #004080);
+    padding: 25px 0;
     box-shadow: 0px 4px 15px rgba(0, 204, 255, 0.5);
-    width: 100%;
+    width: 97%; 
+    max-width: 1500px;  
+    margin: 15px auto;  
     border-radius: 15px;
 }
 
@@ -43,6 +44,7 @@ nav ul li a {
     border-radius: 8px;
     transition: 0.3s;
     text-shadow: 0px 0px 10px rgba(0, 204, 255, 0.8);
+    text-align: center;
 }
 
 nav ul li a:hover {
@@ -227,4 +229,126 @@ nav ul li a:hover {
         flex-direction: column;
         align-items: center;
     }
+}
+/* 🔹 Sección de Edición Especial - Estilo Premium */
+.edicion-especial {
+    text-align: center;
+    padding: 50px 20px;
+    color: #FFD700; /* Dorado */
+}
+
+.edicion-especial h2 {
+    font-size: 40px;
+    text-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8);
+}
+
+.contenedor-especial {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* 🔹 Tarjetas de productos premium */
+.producto-especial {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.6);
+    width: 250px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.producto-especial:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px rgba(255, 215, 0, 1);
+}
+
+/* 🔹 Imagen de los productos */
+.producto-especial img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Nombre del producto */
+.producto-especial h3 {
+    color: #FFD700;
+    font-size: 23px;
+    text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+}
+
+/* 🔹 Precio */
+.precio-especial {
+    color: #FFD700;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Botón de compra */
+.btn-especial {
+    background: #FFD700;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+}
+
+.btn-especial:hover {
+    background: #DAA520;
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 1);
+}
+/* 🔹 Fondo negro solo en la página de Edición Especial */
+.especial {
+    background: #000 !important; /* Negro puro */
+    color: white;
+}
+/* 🔹 Menú oscuro para Edición Especial */
+.especial .menu {
+    background: linear-gradient(90deg, #000, #111); /* Negro puro con un toque de gris oscuro */
+    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.5); /* Glow dorado premium */
+}
+
+/* 🔹 Texto y enlaces en dorado */
+.especial .logo h1,
+.especial nav ul li a {
+    color: gold;
+    text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+}
+
+/* 🔹 Hover de los enlaces */
+.especial nav ul li a:hover {
+    background: gold;
+    color: #000;
+    text-shadow: none;
+}
+
+/* 🔹 Barra de búsqueda premium */
+.especial .barra-busqueda {
+    background: rgba(255, 215, 0, 0.2); /* Dorado translúcido */
+    border: 2px solid gold;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+}
+
+.especial .barra-busqueda input {
+    text-shadow: 0px 0px 5px gold;
+}
+
+.especial .barra-busqueda button {
+    background: gold;
+    color: black;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+}
+
+.especial .barra-busqueda button:hover {
+    background: rgb(200, 170, 0);
 }
