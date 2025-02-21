@@ -1,0 +1,230 @@
+body {
+    background: linear-gradient(90deg, #0077ff, #00ccff);
+}
+
+/* 🔹 Menú principal */
+.menu {
+    background: linear-gradient(90deg, #001f3f, #004080); /* Azul neón */
+    padding: 15px 0;
+    box-shadow: 0px 4px 15px rgba(0, 204, 255, 0.5);
+    width: 100%;
+    border-radius: 15px;
+}
+
+.contenedor-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* 🔹 Logo */
+.logo h1 {
+    font-size: 35px;
+    filter: drop-shadow(0px 0px 8px rgba(0, 204, 255, 0.8));
+    color: #00ccff;
+}
+
+/* 🔹 Enlaces de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00ccff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-shadow: 0px 0px 10px rgba(0, 204, 255, 0.8);
+}
+
+nav ul li a:hover {
+    background: #00ccff;
+    color: #001f3f;
+    text-shadow: none;
+    border-radius: 10px;
+}
+
+/* 🔹 Barra de búsqueda */
+.barra-busqueda {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 204, 255, 0.2); /* Transparente con azul neón */
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #00ccff;
+    box-shadow: 0px 0px 10px rgba(0, 204, 255, 0.8);
+}
+
+.barra-busqueda input {
+    background: none;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    width: 250px;
+    text-shadow: 0px 0px 5px rgba(0, 204, 255, 0.8);
+}
+
+.barra-busqueda input::placeholder {
+    color: #00ccff;
+}
+
+.barra-busqueda button {
+    background: #00ccff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #001f3f;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 204, 255, 0.8);
+}
+
+.barra-busqueda button:hover {
+    background: #0088cc;
+}
+
+/* 🔹 RESPONSIVE: Ajustes para pantallas pequeñas */
+@media (max-width: 868px) {
+    .contenedor-menu {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .barra-busqueda {
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
+    }
+
+    .barra-busqueda input {
+        width: 100%;
+    }
+}
+
+
+/* Sección de bienvenida */
+.seccion-bienvenida {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(90deg, #001f3f, #004080);
+    color: #00ccff; /* Azul neón */
+    text-shadow: 2px 2px 5px rgba(0, 204, 255, 0.8);
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0px 6px 20px rgba(255, 0, 0, 0.5);
+}
+
+.titulo-bienvenida {
+    font-size: 44px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.subtitulo-bienvenida {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* 🔹 Sección de productos (sin fondo azul) */
+.productos {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* 🔹 Contenedor de productos */
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* 🔹 Tarjetas de producto */
+.producto {
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro pero sin cuadrado azul */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 204, 255, 0.6); /* Glow futurista */
+    width: 250px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px rgba(0, 204, 255, 1);
+}
+
+/* 🔹 Imagen de los productos */
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.productos h2 {
+    font-size: 38px;
+}
+/* 🔹 Nombre del producto */
+.producto h3 {
+    color: white;
+    font-size: 23px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+/* 🔹 Precio */
+.precio {
+    color: #00ccff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Botón de compra */
+.btn-comprar {
+    background: #00ccff;
+    color: #001f3f;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 204, 255, 0.8);
+}
+
+.btn-comprar:hover {
+    background: #0088cc;
+    box-shadow: 0px 0px 20px rgba(0, 204, 255, 1);
+}
+
+/* 🔹 RESPONSIVE: Ajustes para pantallas pequeñas */
+@media (max-width: 868px) {
+    .contenedor-productos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
