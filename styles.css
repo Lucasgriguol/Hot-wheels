@@ -1,14 +1,15 @@
 body {
     background: linear-gradient(90deg, #0077ff, #00ccff);
 }
+
 /* 🔹 Menú principal */
 .menu {
     background: linear-gradient(90deg, #001f3f, #004080);
     padding: 25px 0;
     box-shadow: 0px 4px 15px rgba(0, 204, 255, 0.5);
-    width: 97%; 
-    max-width: 1500px;  
-    margin: 15px auto;  
+    width: 97%;
+    max-width: 1500px;
+    margin: 15px auto;
     border-radius: 15px;
 }
 
@@ -21,7 +22,6 @@ body {
     margin: auto;
 }
 
-/* 🔹 Logo */
 .logo h1 {
     font-size: 35px;
     filter: drop-shadow(0px 0px 8px rgba(0, 204, 255, 0.8));
@@ -58,7 +58,7 @@ nav ul li a:hover {
 .barra-busqueda {
     display: flex;
     align-items: center;
-    background: rgba(0, 204, 255, 0.2); /* Transparente con azul neón */
+    background: rgba(0, 204, 255, 0.2);
     padding: 5px;
     border-radius: 10px;
     border: 2px solid #00ccff;
@@ -97,7 +97,7 @@ nav ul li a:hover {
 }
 
 /* 🔹 RESPONSIVE: Ajustes para pantallas pequeñas */
-@media (max-width: 868px) {
+@media (max-width: 950px) {
     .contenedor-menu {
         flex-direction: column;
         gap: 15px;
@@ -126,7 +126,7 @@ nav ul li a:hover {
     text-align: center;
     padding: 60px 20px;
     background: linear-gradient(90deg, #001f3f, #004080);
-    color: #00ccff; /* Azul neón */
+    color: #00ccff;
     text-shadow: 2px 2px 5px rgba(0, 204, 255, 0.8);
     border-radius: 15px;
     margin: 20px auto;
@@ -166,10 +166,10 @@ nav ul li a:hover {
 
 /* 🔹 Tarjetas de producto */
 .producto {
-    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro pero sin cuadrado azul */
+    background: rgba(0, 0, 0, 0.8);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0px 0px 15px rgba(0, 204, 255, 0.6); /* Glow futurista */
+    box-shadow: 0px 0px 15px rgba(0, 204, 255, 0.6);
     width: 250px;
     text-align: center;
     transition: 0.3s;
@@ -186,9 +186,11 @@ nav ul li a:hover {
     border-radius: 10px;
     margin-bottom: 10px;
 }
+
 .productos h2 {
     font-size: 38px;
 }
+
 /* 🔹 Nombre del producto */
 .producto h3 {
     color: white;
@@ -223,18 +225,18 @@ nav ul li a:hover {
     box-shadow: 0px 0px 20px rgba(0, 204, 255, 1);
 }
 
-/* 🔹 RESPONSIVE: Ajustes para pantallas pequeñas */
-@media (max-width: 868px) {
+@media (max-width: 500px) {
     .contenedor-productos {
         flex-direction: column;
         align-items: center;
     }
 }
+
 /* 🔹 Sección de Edición Especial - Estilo Premium */
 .edicion-especial {
     text-align: center;
     padding: 50px 20px;
-    color: #FFD700; /* Dorado */
+    color: #FFD700;
 }
 
 .edicion-especial h2 {
@@ -307,15 +309,17 @@ nav ul li a:hover {
     background: #DAA520;
     box-shadow: 0px 0px 20px rgba(255, 215, 0, 1);
 }
+
 /* 🔹 Fondo negro solo en la página de Edición Especial */
 .especial {
-    background: #000 !important;
+    background: #000;
     color: white;
 }
+
 /* 🔹 Menú oscuro para Edición Especial */
 .especial .menu {
     background: linear-gradient(90deg, #000, #111);
-    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.5); 
+    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.5);
 }
 
 /* 🔹 Texto y enlaces en dorado */
@@ -334,7 +338,7 @@ nav ul li a:hover {
 
 /* 🔹 Barra de búsqueda premium */
 .especial .barra-busqueda {
-    background: rgba(255, 215, 0, 0.2); /* Dorado translúcido */
+    background: rgba(255, 215, 0, 0.2);
     border: 2px solid gold;
     box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
 }
@@ -352,19 +356,19 @@ nav ul li a:hover {
 .especial .barra-busqueda button:hover {
     background: rgb(200, 170, 0);
 }
-/* 🔹 Texto dorado en la barra de búsqueda */
+
 .especial .barra-busqueda input {
-    color: gold; 
+    color: gold;
     text-shadow: 0px 0px 5px rgba(255, 215, 0, 0.8);
 }
 
-/* 🔹 Placeholder también en dorado */
 .especial .barra-busqueda input::placeholder {
     color: gold;
-    opacity: 0.8; 
+    opacity: 0.8;
 }
+
 .especial .logo h1 {
-    color: gold !important;
-    text-shadow: 0px 0px 15px rgba(255, 215, 0, 1) !important;
-    filter: drop-shadow(0px 0px 10px rgba(255, 215, 0, 0.8)) !important;
+    color: gold;
+    text-shadow: 0px 0px 15px rgba(255, 215, 0, 1);
+    filter: drop-shadow(0px 0px 10px rgba(255, 215, 0, 0.8));
 }
