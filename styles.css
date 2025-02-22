@@ -96,31 +96,52 @@ nav ul li a:hover {
     background: #0088cc;
 }
 
-/* 🔹 RESPONSIVE: Ajustes para pantallas pequeñas */
 @media (max-width: 950px) {
     .contenedor-menu {
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
         text-align: center;
+        width: 100%;
+        gap: 18px;
+    }
+
+    nav {
+        width: 100%;
     }
 
     nav ul {
+        display: flex;
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        width: 70%;
+        text-align: center;
+        padding: 2px;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 2px;
     }
 
     .barra-busqueda {
-        width: 100%;
-        max-width: 320px;
+        width: 80%;
+        max-width: 450px;
+        display: flex;
         justify-content: center;
     }
 
     .barra-busqueda input {
+        flex-grow: 1;
         width: 100%;
     }
 }
-
-
 /* Sección de bienvenida */
 .seccion-bienvenida {
     text-align: center;
@@ -216,14 +237,17 @@ nav ul li a:hover {
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
-    box-shadow: 0px 0px 10px rgba(0, 204, 255, 0.8);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 5px rgba(0, 204, 255, 0.5);
 }
 
 .btn-comprar:hover {
-    background: #0088cc;
-    box-shadow: 0px 0px 20px rgba(0, 204, 255, 1);
+    background: transparent;
+    color: #00ccff;
+    box-shadow: 0px 0px 15px rgba(0, 204, 255, 1);
+    border: 2px solid #00ccff;
 }
+
 
 @media (max-width: 500px) {
     .contenedor-productos {
